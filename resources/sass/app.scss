@@ -1,1 +1,18 @@
-//
+// Variables
+@import "Partials/variables";
+
+// Mixins
+@import "Partials/mixins";
+
+// Typography
+@import "Partials/fonts";
+
+// Common Style
+@import "Partials/common";
+
+// Layout Style
+@import "Partials/header";
+@import "Partials/footer";
+
+// Main Style
+@import "Partials/main";

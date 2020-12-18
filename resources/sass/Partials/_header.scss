@@ -1,0 +1,14 @@
+header.main-header {
+    height: 80px;
+    background-color: $headerColor;
+
+    nav.main-nav {
+        @include flex-row-centered;
+        height: 100%;
+        color: #fff;
+
+        ul.main-nav-list {
+            display: flex;
+        }
+    }
+}
