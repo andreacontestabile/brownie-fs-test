@@ -16,23 +16,23 @@ class BlankShirtsTableSeeder extends Seeder
         $blank_shirts = [
             [
                 "name" => "White",
-                "image_path" => Storage::url("images/white-t-shirt-template.png")
+                "image_path" => Storage::url("images/blank_shirts/white-t-shirt-template.png")
             ],
             [
                 "name" => "Black",
-                "image_path" => Storage::url("images/black-t-shirt-template.png")
+                "image_path" => Storage::url("images/blank_shirts/black-t-shirt-template.png")
             ],
             [
                 "name" => "Blue",
-                "image_path" => Storage::url("images/blue-t-shirt-template.png")
+                "image_path" => Storage::url("images/blank_shirts/blue-t-shirt-template.png")
             ],
             [
                 "name" => "Green",
-                "image_path" => Storage::url("images/green-t-shirt-template.png")
+                "image_path" => Storage::url("images/blank_shirts/green-t-shirt-template.png")
             ],
             [
                 "name" => "Red",
-                "image_path" => Storage::url("images/red-t-shirt-template.png")
+                "image_path" => Storage::url("images/blank_shirts/red-t-shirt-template.png")
             ]
         ];
 

@@ -15,6 +15,8 @@ class CreateCustomShirtsTable extends Migration
     {
         Schema::create('custom_shirts', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("image");
             $table->timestamps();
         });
     }

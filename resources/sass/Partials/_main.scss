@@ -1,3 +1,46 @@
 main {
     height: calc(100vh - 160px);
+
+    #customize-app {
+        display: flex;
+        height: 100%;
+        #choose {
+            position: relative;
+            height: 100%;
+            width: 30%;
+            background-color: #fff;
+            box-shadow: 5px 0 10px -2px rgba(0, 0, 0, 0.7);
+            font-family: "Lato", sans-serif;
+
+            #choose-base {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+
+                .color-list-container {
+                    margin-top: 20px;
+                    .color-list {
+                        display: flex;
+                        li.color-item {
+                            padding: 0 10px;
+                            text-align: center;
+                            .color-preview {
+                                height: 80px;
+                                width: 80px;
+                                background-size: cover;
+                                background-position: 50% 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #preview {
+            height: 100%;
+            width: 70%;
+            background-color: darkgrey;
+        }
+    }
 }

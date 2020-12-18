@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,5 +43,52 @@ footer.main-footer {
 
 main {
   height: calc(100vh - 160px);
+}
+
+main #customize-app {
+  display: flex;
+  height: 100%;
+}
+
+main #customize-app #choose {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 5px 0 10px -2px rgba(0, 0, 0, 0.7);
+  font-family: "Lato", sans-serif;
+}
+
+main #customize-app #choose #choose-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+main #customize-app #choose #choose-base .color-list-container {
+  margin-top: 20px;
+}
+
+main #customize-app #choose #choose-base .color-list-container .color-list {
+  display: flex;
+}
+
+main #customize-app #choose #choose-base .color-list-container .color-list li.color-item {
+  padding: 0 10px;
+  text-align: center;
+}
+
+main #customize-app #choose #choose-base .color-list-container .color-list li.color-item .color-preview {
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+main #customize-app #preview {
+  height: 100%;
+  width: 70%;
+  background-color: darkgrey;
 }
 
