@@ -1,14 +1,17 @@
 header.main-header {
     height: 80px;
     background-color: $headerColor;
+    .container {
+        width: 80%;
+        max-width: 100%;
+        nav.main-nav {
+            @include flex-row-centered;
+            height: 100%;
+            color: #fff;
 
-    nav.main-nav {
-        @include flex-row-centered;
-        height: 100%;
-        color: #fff;
-
-        ul.main-nav-list {
-            display: flex;
+            ul.main-nav-list {
+                display: flex;
+            }
         }
     }
 }

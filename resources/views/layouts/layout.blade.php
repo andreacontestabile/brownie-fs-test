@@ -16,6 +16,7 @@
   </main>
   
   @include('layouts.partials.footer')
-
+<script src="https://unpkg.com/merge-images"></script>
+<script src={{asset("/js/app.js")}}></script>
 </body>
 </html>

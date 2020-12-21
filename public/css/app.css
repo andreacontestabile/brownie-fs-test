@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Pacifico", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -21,10 +21,15 @@ ul {
 
 header.main-header {
   height: 80px;
-  background-color: #12ffa8;
+  background-color: #1294ff;
 }
 
-header.main-header nav.main-nav {
+header.main-header .container {
+  width: 80%;
+  max-width: 100%;
+}
+
+header.main-header .container nav.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,13 +37,13 @@ header.main-header nav.main-nav {
   color: #fff;
 }
 
-header.main-header nav.main-nav ul.main-nav-list {
+header.main-header .container nav.main-nav ul.main-nav-list {
   display: flex;
 }
 
 footer.main-footer {
   height: 80px;
-  background-color: #00754a;
+  background-color: #00274b;
 }
 
 main {
@@ -50,45 +55,109 @@ main #customize-app {
   height: 100%;
 }
 
-main #customize-app #choose {
+main #customize-app #customize {
+  padding: 20px;
   position: relative;
   height: 100%;
   width: 30%;
   background-color: #fff;
   box-shadow: 5px 0 10px -2px rgba(0, 0, 0, 0.7);
-  font-family: "Lato", sans-serif;
+  overflow-y: auto;
 }
 
-main #customize-app #choose #choose-base {
+main #customize-app #customize #choose-base,
+main #customize-app #customize #choose-graphics,
+main #customize-app #customize #choose-name,
+main #customize-app #customize #choose-name form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
 }
 
-main #customize-app #choose #choose-base .color-list-container {
+main #customize-app #customize #choose-name h2 {
+  margin-bottom: 20px;
+}
+
+main #customize-app #customize #choose-name input {
+  width: 400px;
+  height: 40px;
   margin-top: 20px;
+  padding: 0 20px;
+  font-family: inherit;
+  font-size: 20px;
+  border-radius: 30px;
+  outline: 0;
+  border: 1px solid #1294ff;
 }
 
-main #customize-app #choose #choose-base .color-list-container .color-list {
+main #customize-app #customize #choose-name input[type=submit] {
+  width: auto;
+  margin-top: 60px;
+  padding: 5px 30px;
+  background-color: #1294ff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main #customize-app #customize .list-container {
+  width: 100%;
+  margin: 30px 0;
+}
+
+main #customize-app #customize .list-container .list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-main #customize-app #choose #choose-base .color-list-container .color-list li.color-item {
+main #customize-app #customize .list-container .list li.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
   padding: 0 10px;
+  flex-basis: calc(100% / 5);
   text-align: center;
+  cursor: pointer;
 }
 
-main #customize-app #choose #choose-base .color-list-container .color-list li.color-item .color-preview {
+main #customize-app #customize .list-container .list li.list-item h3 {
+  color: #00274b;
+  transition: color 0.2s;
+}
+
+main #customize-app #customize .list-container .list li.list-item:hover h3 {
+  color: #1294ff;
+}
+
+main #customize-app #customize .list-container .list li.list-item .item-preview {
+  margin-bottom: 10px;
   height: 80px;
-  width: 80px;
+  width: 100%;
   background-size: cover;
-  background-position: 50% 100%;
+  background-position-x: 40%;
 }
 
 main #customize-app #preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 70%;
-  background-color: darkgrey;
+  background-color: #444;
+  background-image: url("/storage/images/blank_shirts/white-t-shirt-template.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main #customize-app #preview .graphics-preview {
+  height: 250px;
+  width: 250px;
+  background-image: url("/storage/images/graphics/aztec.png");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center center;
+  opacity: 0.95;
 }
 

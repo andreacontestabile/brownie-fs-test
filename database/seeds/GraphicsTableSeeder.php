@@ -16,31 +16,31 @@ class GraphicsTableSeeder extends Seeder
         $graphics = [
             [
                 "name" => "Aztec",
-                "image_path" => Storage::url("images/aztec.png")
+                "image_path" => Storage::url("images/graphics/aztec.png")
             ],
             [
                 "name" => "Budgie",
-                "image_path" => Storage::url("images/budgie.png")
+                "image_path" => Storage::url("images/graphics/budgie.png")
             ],
             [
                 "name" => "Death",
-                "image_path" => Storage::url("images/Death.png")
+                "image_path" => Storage::url("images/graphics/Death.png")
             ],
             [
                 "name" => "Dragon",
-                "image_path" => Storage::url("images/dragon.png")
+                "image_path" => Storage::url("images/graphics/dragon.png")
             ],
             [
                 "name" => "Elysium",
-                "image_path" => Storage::url("images/elysium.png")
+                "image_path" => Storage::url("images/graphics/elysium.png")
             ],
             [
                 "name" => "Pirate",
-                "image_path" => Storage::url("images/pirate.png")
+                "image_path" => Storage::url("images/graphics/pirate.png")
             ],
             [
                 "name" => "Wolf",
-                "image_path" => Storage::url("images/wolf.png")
+                "image_path" => Storage::url("images/graphics/wolf.png")
             ]
         ];
 
